@@ -1,19 +1,19 @@
 function Gallery() {
     let deer = {
        title: "Deer",
-       imageUrl: "https://example.com/deer-image.jpg",
+       imageUrl: "https://stocksnap.io/photo/deer-nature-YVQMPLACTF",
        description: "This is bambi",
     };
 
     let antelope = {
         title: "Antelope",
-        imageUrl: "https://example.com/antelope-image.jpg",
+        imageUrl: "https://www.pexels.com/photo/brown-deer-standing-near-green-leafed-plant-1499596/",
         description: "This is an antelope.",
     };
     
     let bighornSheep = {
         title: "Bighorn Sheep",
-        imageUrl: "https://example.com/bighorn-sheep-image.jpg",
+        imageUrl: "https://www.britannica.com/animal/bighorn-sheep",
         description: "This is a bighorn sheep.",
     };
 
