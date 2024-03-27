@@ -13,8 +13,13 @@ function Gallery() {
     
     let bighornSheep = {
         title: "Bighorn Sheep",
+<<<<<<< HEAD
         imageUrl: "https://www.britannica.com/animal/bighorn-sheep",
         description: "This is a bighorn sheep.",
+=======
+        imageUrl: "https://example.com/bighorn-sheep-image.jpg",
+        description: "This is a bighorn-sheep.",
+>>>>>>> c9a7789ee03d28a5a668ed340305e7fe797e7cee
     };
 
     return (
