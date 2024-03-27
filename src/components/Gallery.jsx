@@ -14,7 +14,7 @@ function Gallery() {
     let bighornSheep = {
         title: "Bighorn Sheep",
         imageUrl: "https://example.com/bighorn-sheep-image.jpg",
-        description: "This is a bighorn sheep.",
+        description: "This is a bighorn-sheep.",
     };
 
     return (
