@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.blue-background {
+  background-color: blue;
+  padding: 20px; /* Add some padding for better readability */
+}
