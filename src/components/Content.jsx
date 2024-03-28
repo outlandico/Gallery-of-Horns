@@ -1,28 +1,28 @@
 function Gallery() {
-  let deer = {
-      title: "Deer",
-      imageUrl: "https://example.com/deer-image.jpg",
-      description: "This is bambi",
-  };
+//   let deer = {
+//       title: "Deer",
+//       imageUrl: "../images/deer.jpg",
+//       description: "This is bambi",
+//   };
 
-  let antelope = {
-      title: "Antelope",
-      imageUrl: "https://example.com/antelope-image.jpg",
-      description: "This is an antelope.",
-  };
+//   let antelope = {
+//       title: "Antelope",
+//       imageUrl: "../images/caribou.jpg",
+//       description: "This is an antelope.",
+//   };
 
-  let bighornSheep = {
-      title: "Bighorn Sheep",
-      imageUrl: "https://example.com/bighorn-sheep-image.jpg",
-      description: "This is a bighorn sheep.",
-  };
+//   let bighornSheep = {
+//       title: "Bighorn Sheep",
+//       imageUrl: "../images/bighorn.jpg",
+//       description: "This is a bighorn sheep.",
+//   };
 
   return (
       <main>
-          <section className="deck">
+          {/* <section className="deck">
               <div className="card">
                   <h2>{deer.title}</h2>
-                  <img src={deer.imageUrl} alt={deer.title} />
+                  <img src={deer.image} alt={deer.title} />
                   <p>{deer.description}</p>
               </div>
               <div className="card">
@@ -35,7 +35,7 @@ function Gallery() {
                   <img src={bighornSheep.imageUrl} alt={bighornSheep.title} />
                   <p>{bighornSheep.description}</p>
               </div>
-          </section>
+          </section> */}
       </main>
   );
 }
