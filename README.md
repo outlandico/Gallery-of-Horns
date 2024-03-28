@@ -9,6 +9,7 @@ Currently, two official plugins are available:
 
 ## gallery-of-horns
 
+
 Number and Name of feature: 1. Display a Modal
 
 Estimate of time needed to complete: 1 hour
@@ -18,3 +19,4 @@ Start time: 3:41pm
 Finish time: 5:22pm
 
 Actual time needed to complete: 1 hour
+
