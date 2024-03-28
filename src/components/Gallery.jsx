@@ -1,45 +1,51 @@
-import { useState, useEffect } from 'react'; // Removed React import since it's not used
-
-import { Card, ListGroup, Button } from 'react-bootstrap';
+import { useState } from 'react';
+import { Card, Row, Col, Modal } from 'react-bootstrap';
 import jsonData from '../data.json';
 
 function Gallery() {
-    const [galleryData, setGalleryData] = useState([]);
-    const [favorites, setFavorites] = useState({});
+    const [showModal, setShowModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
 
-    useEffect(() => {
-        setGalleryData(jsonData);
-        const initialFavorites = {};
-        jsonData.forEach(item => {
-            initialFavorites[item.title.toLowerCase()] = 0;
-        });
-        setFavorites(initialFavorites);
-    }, []);
+    // Function to handle clicking on the image to open the modal
+    const handleImageClick = (imageUrl) => {
+        setSelectedImage(imageUrl); // Set the selected image URL
+        setShowModal(true); // Show the modal
+    };
 
-    const handleFavoriteClick = (title) => {
-        setFavorites(prevFavorites => ({
-            ...prevFavorites,
-            [title.toLowerCase()]: prevFavorites[title.toLowerCase()] + 1
-        }));
+    // Function to close the modal
+    const handleCloseModal = () => {
+        setShowModal(false); // Hide the modal
+        setSelectedImage(''); // Clear the selected image URL
     };
 
     return (
         <main>
-            <section className="deck">
-                {galleryData.map((item, index) => (
-                    <Card key={index} style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={item.image_url} alt={item.title} />
-                        <Card.Body>
-                            <Card.Title>{item.title}</Card.Title>
-                            <Card.Text>{item.description}</Card.Text>
-                            <Button onClick={() => handleFavoriteClick(item.title)} variant="primary">Favorite ({favorites[item.title.toLowerCase()]})</Button>
-                        </Card.Body>
-                        <ListGroup className="list-group-flush">
-                            <ListGroup.Item>Horns: {item.horns}</ListGroup.Item>
-                        </ListGroup>
-                    </Card>
+            <Row xs={1} md={2} lg={3} className="g-4">
+                {jsonData.map((beast, index) => (
+                    <Col key={index}>
+                        <Card>
+                            <Card.Img
+                                variant="top"
+                                src={beast.image_url}
+                                alt={beast.title}
+                                onClick={() => handleImageClick(beast.image_url)}
+                                style={{ cursor: 'pointer' }}
+                            />
+                            <Card.Body>
+                                <Card.Title>{beast.title}</Card.Title>
+                                <Card.Text>{beast.description}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </section>
+            </Row>
+            
+            {/* Modal to display the clicked image */}
+            <Modal show={showModal} onHide={handleCloseModal}>
+                <Modal.Body>
+                    <img src={selectedImage} alt="Selected Beast" style={{ width: '100%' }} />
+                </Modal.Body>
+            </Modal>
         </main>
     );
 }
