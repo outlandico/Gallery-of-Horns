@@ -9,37 +9,14 @@ Currently, two official plugins are available:
 
 ## gallery-of-horns
 
-Number and name of feature:1 Display Images
 
-Estimate of time needed to complete: 1
-Start time:6:41pm
-Finish time:8:03pm
-Actual time needed to complete:2hours
-
-Number and name of feature:2 Allow Users to Favorite Individual Beasts
-Estimate of time needed to complete: 1
-Start time:6:41pm
-Finish time:8:03pm
-Actual time needed to complete:1hour
-
-Number and name of feature:3 BootStrap
-
-Estimate of time needed to complete: 1
-
-Start time:6:41pm
-
-Finish time:8:03pm
-
-Actual time needed to complete: 2 hours
-
--------------------------------------------------------------------------
-
-Number and name of feature: 2:43pm
+Number and Name of feature: 1. Display a Modal
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 2:43pm
+Start time: 3:41pm
 
-Finish time:
+Finish time: 5:22pm
 
-Actual time needed to complete:
+Actual time needed to complete: 1 hour
+
