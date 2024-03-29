@@ -18,6 +18,6 @@ Start time: 3:41pm
 Finish time: 5:22pm
 
 Actual time needed to complete: 1 hour
-
 ![Lighthouse](<images/Screenshot 2024-03-28 at 5.21.40 PM.png>)
 ![Lighthouse](<images/Screenshot 2024-03-28 at 5.39.10 PM.png>)
+![Lighthouse](<Screenshot 2024-03-28 at 5.14.17 PM (3).png>)
