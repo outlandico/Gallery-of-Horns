@@ -9,13 +9,13 @@ Currently, two official plugins are available:
 
 ## gallery-of-horns
 
-Number and Name of feature: 1. Display a Modal
+Number and Name of feature: 1. Filter Form
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 3:41pm
+Start time: 6:42pm
 
-Finish time: 5:22pm
+Finish time: 7:02pm
 
 Actual time needed to complete: 1 hour
 ![Lighthouse](<images/Screenshot 2024-03-28 at 5.21.40 PM.png>)
