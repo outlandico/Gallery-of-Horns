@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
+import Counter from './counter';
 import { useState } from 'react';
 import { Card, Row, Col, Modal } from 'react-bootstrap';
 import jsonData from '../data.json';
 
-function Gallery() {
+function Gallery(props) {
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
 
@@ -34,6 +36,8 @@ function Gallery() {
                             <Card.Body>
                                 <Card.Title>{beast.title}</Card.Title>
                                 <Card.Text>{beast.description}</Card.Text>
+                                <Counter currentCount={props.currentCount} handleCount={props.handleIncrement} />
+
                             </Card.Body>
                         </Card>
                     </Col>
